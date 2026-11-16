@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Titicaca Tours</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Titicaca Tours</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="reserva.html">Reservar Tour</a>
+    </nav>
+    <main>
+        <h2 style="text-align: center;">Asegura tu lugar</h2>
+        <!-- Formulario accesible -->
+        <form action="#" method="POST">
+            <fieldset style="border: 1px solid #ccc; border-radius: 8px; padding: 20px;">
+                <legend style="font-weight: bold; color: var(--azul-marino);">Datos de la Reserva</legend>
+                
+                <div class="form-group">
+                    <label for="destino">Destino turístico:</label>
+                    <select id="destino" name="destino" required>
+                        <option value="">Seleccione a dónde desea viajar...</option>
+                        <option value="uros">Islas de los Uros</option>
+                        <option value="taquile">Isla Taquile</option>
+                        <option value="sillustani">Chullpas de Sillustani</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-salida">Fecha de salida (DD/MM/AAAA):</label>
+                    <input type="date" id="fecha-salida" name="fecha-salida" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pasajeros">Número de pasajeros (Máximo 20):</label>
+                    <input type="number" id="pasajeros" name="pasajeros" min="1" max="20" required>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Confirmar Reserva</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Titicaca Tours - Proyecto Universitario UNA Puno</p>
+    </footer>
+</body>
+</html>
