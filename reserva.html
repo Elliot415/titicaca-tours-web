@@ -17,8 +17,7 @@
     </nav>
     <main>
         <h2 style="text-align: center;">Asegura tu lugar</h2>
-        <!-- Formulario accesible -->
-        <form action="#" method="POST">
+        <form id="form-reserva" action="#" method="POST">
             <fieldset style="border: 1px solid #ccc; border-radius: 8px; padding: 20px;">
                 <legend style="font-weight: bold; color: var(--azul-marino);">Datos de la Reserva</legend>
                 
@@ -26,9 +25,9 @@
                     <label for="destino">Destino turístico:</label>
                     <select id="destino" name="destino" required>
                         <option value="">Seleccione a dónde desea viajar...</option>
-                        <option value="uros">Islas de los Uros</option>
-                        <option value="taquile">Isla Taquile</option>
-                        <option value="sillustani">Chullpas de Sillustani</option>
+                        <option value="uros">Islas de los Uros (S/ 50 por persona)</option>
+                        <option value="taquile">Isla Taquile (S/ 85 por persona)</option>
+                        <option value="sillustani">Chullpas de Sillustani (S/ 100 por persona)</option>
                     </select>
                 </div>
 
@@ -42,12 +41,15 @@
                     <input type="number" id="pasajeros" name="pasajeros" min="1" max="20" required>
                 </div>
 
-                <button type="submit" class="btn" style="width: 100%;">Confirmar Reserva</button>
+                <button type="submit" class="btn" style="width: 100%;">Confirmar y Calcular Precio</button>
+                
+                <p id="resultado-reserva" style="text-align: center; font-weight: bold; margin-top: 15px; font-size: 1.2em; color: #0056b3;"></p>
             </fieldset>
         </form>
     </main>
     <footer>
         <p>&copy; 2026 Titicaca Tours - Proyecto Universitario UNA Puno</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
